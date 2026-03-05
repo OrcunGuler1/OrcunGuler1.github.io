@@ -1,0 +1,217 @@
+:root {
+  --bg: #fff7ec;
+  --panel: #fffdf9;
+  --ink: #132018;
+  --muted: #4b5d50;
+  --brand: #b84417;
+  --brand-2: #0f766e;
+  --border: #e8d8bf;
+  --shadow: 0 14px 35px rgba(19, 32, 24, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Archivo", "Trebuchet MS", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 0% 10%, #ffe2bf 0 25%, transparent 55%),
+    radial-gradient(circle at 95% 88%, #c7f6ee 0 22%, transparent 58%),
+    var(--bg);
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  width: min(980px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2.5rem 0 3.5rem;
+  position: relative;
+}
+
+.hero {
+  border: 2px solid var(--border);
+  border-radius: 22px;
+  background: linear-gradient(135deg, #fffefb 0%, #fff3e4 100%);
+  box-shadow: var(--shadow);
+  padding: 2rem 1.5rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.4rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand-2);
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5.5vw, 3rem);
+  line-height: 1.05;
+}
+
+.lead {
+  margin: 0.9rem 0 0;
+  max-width: 65ch;
+  color: var(--muted);
+}
+
+.support-line {
+  margin: 1.1rem 0 0;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.support-line a {
+  color: var(--brand);
+  font-weight: 500;
+}
+
+.games {
+  margin-top: 1.4rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.game-card {
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+  padding: 1.2rem;
+}
+
+.game-card h2 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.game-card p {
+  margin: 0.6rem 0 0;
+  color: var(--muted);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  text-decoration: none;
+  padding: 0.45rem 0.78rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.88rem;
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background: var(--brand);
+  color: #fff;
+}
+
+.btn-secondary {
+  border-color: #c7c2b8;
+  background: #fff;
+}
+
+.badge {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.75rem;
+  border: 1px solid #d3d1cb;
+  border-radius: 999px;
+  background: #f7f6f3;
+  padding: 0.36rem 0.72rem;
+}
+
+.legal {
+  margin-top: 1.4rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.policy-card {
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+  padding: 1.25rem;
+  scroll-margin-top: 1rem;
+}
+
+.policy-card h2 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.policy-card p,
+.policy-card li {
+  color: var(--muted);
+}
+
+.policy-card ul {
+  margin-top: 0.5rem;
+}
+
+.policy-meta {
+  margin: 0.55rem 0 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.83rem;
+  color: #375145;
+}
+
+.top-link {
+  display: inline-flex;
+  margin-top: 0.8rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.83rem;
+  text-decoration: none;
+  color: var(--brand);
+}
+
+.bg-shape {
+  position: fixed;
+  z-index: -1;
+  pointer-events: none;
+  filter: blur(38px);
+}
+
+.bg-shape-a {
+  width: 240px;
+  height: 240px;
+  top: -70px;
+  right: -40px;
+  background: rgba(15, 118, 110, 0.28);
+}
+
+.bg-shape-b {
+  width: 260px;
+  height: 260px;
+  left: -60px;
+  bottom: -80px;
+  background: rgba(184, 68, 23, 0.25);
+}
+
+@media (max-width: 760px) {
+  .games {
+    grid-template-columns: 1fr;
+  }
+}
