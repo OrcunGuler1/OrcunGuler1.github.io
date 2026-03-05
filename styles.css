@@ -162,6 +162,11 @@ h1 {
   font-size: 1.35rem;
 }
 
+.policy-card h3 {
+  margin: 1rem 0 0.3rem;
+  font-size: 1rem;
+}
+
 .policy-card p,
 .policy-card li {
   color: var(--muted);
