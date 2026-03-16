@@ -19,6 +19,6 @@ Developer page and legal pages for Orcun Guler mobile games.
 1. Add or update a game card in `index.html`.
 2. Add or update the matching section in `privacy/index.html`.
 3. Add or update the matching section in `terms/index.html`.
-4. Keep anchor IDs stable (`#circuit-connect`, `#echomaze`, `#oopsallmines`, `#bureau-of-lost-minutes`).
+4. Keep anchor IDs stable (`#circuit-connect`, `#echomaze`, `#oopsallmines`, `#seconds-to-spare`).
 5. If publisher details change, update `app-ads.txt`.
 6. Commit and push to `main` to trigger GitHub Pages deployment.
